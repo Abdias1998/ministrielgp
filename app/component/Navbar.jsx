@@ -1,4 +1,3 @@
-// NavBar.js
 "use client";
 import { useEffect, useRef } from "react";
 import { useState } from "react";
@@ -48,14 +47,14 @@ export default function NavBar() {
                 style={{ borderRadius: "50%" }}
                 className="h-8 w-auto"
                 src="/logo.jfif"
-                alt="Logo"
+                alt=""
               />
             </Link>
           </div>
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-yellow-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -67,8 +66,9 @@ export default function NavBar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-bold leading-6 text-gray-900 uppercase"
               >
+                {" "}
                 {item.name}
               </Link>
             ))}
@@ -98,12 +98,12 @@ export default function NavBar() {
                   style={{ borderRadius: "50%" }}
                   className="h-8 w-auto"
                   src="/logo.jfif"
-                  alt="Logo"
+                  alt=""
                 />
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-yellow-700"
+                className="-m-2.5 rounded-md p-2.5 text-gray-700"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>

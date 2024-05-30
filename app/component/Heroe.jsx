@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const images = ["/im1.jpg", "/im2.jpg"];
+const images = ["/im6.jpg", "/im1.jpg", "/im2.jpg", "/im7.jpg"];
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -19,7 +19,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section
+      style={{ height: "100vh" }}
+      className="relative w-full overflow-hidden"
+    >
       <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-1000">
         {images.map((src, index) => (
           <Image
@@ -28,6 +31,8 @@ export default function Hero() {
             alt={`Slide ${index}`}
             layout="fill"
             objectFit="cover"
+            objectPosition="center" // This centers the image
+            quality={75} // Adjust quality to optimize loading
             className={`absolute transition-opacity duration-1000 ease-in-out ${
               index === currentImageIndex ? "opacity-100" : "opacity-0"
             }`}
