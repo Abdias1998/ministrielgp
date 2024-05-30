@@ -1,9 +1,8 @@
-// Hero.js
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const images = ["/im6.jpg", "/im1.jpg", "/im2.jpg", "/im7.jpg"];
+const images = ["/im8.jpg"];
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,6 +37,24 @@ export default function Hero() {
             }`}
           />
         ))}
+      </div>
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-4">
+        <h1 className="text-white text-6xl md:text-8xl font-bold">
+          MNISTERE LA GRACE PARLE
+        </h1>
+        <p className="text-gray-900 text-md">
+          Rejoignez-nous pour un voyage spirituel inspirant. Rejoignez-nous pour
+          un voyage spirituel inspirant. Rejoignez-nous pour un voyage spirituel
+          inspirant.
+        </p>
+        <div className="flex space-x-4">
+          <button className="px-4 py-2 bg-blue-600 text-gray-900 rounded hover:bg-blue-700">
+            En savoir plus
+          </button>
+          <button className="px-4 py-2 bg-yellow-500 text-gray-900 rounded hover:bg-yellow-700">
+            Nous contacter
+          </button>
+        </div>
       </div>
     </section>
   );
