@@ -26,11 +26,11 @@ export default function CustomComponent() {
 
       <div className="float right-0 mt-6 mr-4">
         <Image
-          src="/im4.jpg" // Remplacez par le chemin de votre image de profil
+          src="/im5c.jpg" // Remplacez par le chemin de votre image de profil
           alt="Profile Image"
-          width={120}
-          height={120}
-          style={{ borderRadius: "30%" }}
+          width={98}
+          height={98}
+          style={{ borderRadius: "100%" }}
           className="rounded border border-gray-300"
         />
       </div>
