@@ -11,7 +11,7 @@ export default function CustomComponent() {
 
       <div className="flex flex-col mt-6 md:flex-row md:space-x-4 mb-4">
         <p className="mb-4 text-gray-500 md:mb-0">
-          Je vous souhaite la bienvenue sur le site officiel de Wafo Ministries.
+          Je vous souhaite la bienvenue sur le site officiel de La Grâce Parle.
           A travers les enseignements et les messages que nous diffusons, je
           désire que votre mentalité soit transformée, que votre vie soit
           révolutionnée, et que vous accomplissiez certainement votre destinée.

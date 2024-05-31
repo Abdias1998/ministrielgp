@@ -15,7 +15,7 @@ const Footer = () => {
                   href="/confidentialite"
                   className="text-gray-300 hover:text-white"
                 >
-                  Politique de confidentialité
+                  Donner votre vie à Jesus ?
                 </Link>
               </li>
               <li>
@@ -38,12 +38,12 @@ const Footer = () => {
             <ul className="mt-4 space-y-2">
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-white">
-                  À propos
+                  Le ministère
                 </Link>
               </li>
               <li>
                 <Link href="/notes" className="text-gray-300 hover:text-white">
-                  Notes
+                  Agenda
                 </Link>
               </li>
               <li>
@@ -51,12 +51,7 @@ const Footer = () => {
                   href="/statistiques"
                   className="text-gray-300 hover:text-white"
                 >
-                  Statistiques
-                </Link>
-              </li>
-              <li>
-                <Link href="/avis" className="text-gray-300 hover:text-white">
-                  Avis
+                  Ressources
                 </Link>
               </li>
             </ul>
