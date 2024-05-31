@@ -46,7 +46,7 @@ export default function NavBar() {
                 height={140}
                 style={{ borderRadius: "50%" }}
                 className="h-8 w-auto"
-                src="/logo.jfif"
+                src="/logo.jpg"
                 alt=""
               />
             </Link>
@@ -97,7 +97,7 @@ export default function NavBar() {
                   height={140}
                   style={{ borderRadius: "50%" }}
                   className="h-8 w-auto"
-                  src="/logo.jfif"
+                  src="/logo.jpg"
                   alt=""
                 />
               </Link>
