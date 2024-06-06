@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const images = ["/im4.jpg"];
+const images = ["/im2.jpg"];
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -27,6 +27,8 @@ export default function Hero() {
           <Image
             key={index}
             src={src}
+            srcSet="im2.jpg 400w, im9.jpg 800w, im9.jpg 1600w"
+            sizes="(max-width: 600px) 400px, 800px"
             alt={`Slide ${index}`}
             layout="fill"
             objectFit="cover"
@@ -37,24 +39,6 @@ export default function Hero() {
             }`}
           />
         ))}
-      </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-4">
-        <h1 className=" text-white text-6xl md:text-8xl  font-extrabold">
-          MINISTÈRE LA GRACE PARLE
-        </h1>
-        <p className="text-gray-900 text-lg md:text-lg font-semibold">
-          Rejoignez-nous pour un voyage spirituel inspirant. Rejoignez-nous pour
-          un voyage spirituel inspirant. Rejoignez-nous pour un voyage spirituel
-          inspirant.
-        </p>
-        <div className="flex space-x-4 font-bold">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-            En savoir plus
-          </button>
-          <button className="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-700">
-            Nous contacter
-          </button>
-        </div>
       </div>
     </section>
   );

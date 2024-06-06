@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ThemeScript = () => {
@@ -16,42 +17,53 @@ const ThemeScript = () => {
         </div>
 
         <div className=" flex justify-center items-start content-start flex-col  mt-12">
-          <div className="flex space-x-2">
-            <Image
-              width={80}
-              height={80}
-              style={{ borderRadius: "50%" }}
-              className="h-8 w-auto cursor-pointer"
-              src="/icon-play-64.webp"
-              alt="icon-play"
-            />
-            <div>
-              <h4 className="text-white uppercase text-md md:text-lg font-bold hover:text-yellow-500 cursor-pointer">
-                OINTS TEMOINS
-              </h4>
-              <p className="text-gray-700 text-sm font-light md:text-md  py-1">
-                ORATEUR: PROPHETE SAMUEL DALUM
-              </p>
+          <Link
+            href="https://youtu.be/kUYYGZXjRqs?si=5F0u44isx2PfvYaR"
+            target="blank"
+          >
+            <div className="flex space-x-2">
+              <Image
+                width={80}
+                height={80}
+                style={{ borderRadius: "50%" }}
+                className="h-8 w-auto cursor-pointer"
+                src="/icon-play-64.webp"
+                alt="icon-play"
+              />
+              <div>
+                <h4 className="text-white uppercase text-md md:text-lg font-bold hover:text-yellow-500 cursor-pointer">
+                  Dieu m'a fait du bien
+                </h4>
+                <p className="text-gray-700 text-sm font-light md:text-md  py-1">
+                  ORATEUR: PROPHETE SAMUEL DALUM
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="flex space-x-2 py-6 ">
-            <Image
-              width={80}
-              height={80}
-              style={{ borderRadius: "50%" }}
-              className="h-8 w-auto cursor-pointer"
-              src="/icon-play-64.webp"
-              alt="icon-play"
-            />
-            <div>
-              <h4 className="text-white uppercase text-md md:text-lg font-bold hover:text-yellow-500 cursor-pointer">
-                JESUS LA VERITE
-              </h4>
-              <p className="text-gray-700 text-sm font-light md:text-md  py-1">
-                ORATEUR: PROPHETE SAMUEL DALUM
-              </p>
+          </Link>
+          <Link
+            href="https://youtu.be/-26oOd0rylI?si=bS8NcqMNbe7JJVcU"
+            target="blank"
+          >
+            {" "}
+            <div className="flex space-x-2 py-6 ">
+              <Image
+                width={80}
+                height={80}
+                style={{ borderRadius: "50%" }}
+                className="h-8 w-auto cursor-pointer"
+                src="/icon-play-64.webp"
+                alt="icon-play"
+              />
+              <div>
+                <h4 className="text-white uppercase text-md md:text-lg font-bold hover:text-yellow-500 cursor-pointer">
+                  DIEU ME DEVANCE
+                </h4>
+                <p className="text-gray-700 text-sm font-light md:text-md  py-1">
+                  ORATEUR: PROPHETE SAMUEL DALUM
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="">

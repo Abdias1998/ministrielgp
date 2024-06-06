@@ -15,7 +15,7 @@ export default function NavBar() {
 
   const navigation = [
     { name: "Accueil", href: "/" },
-    { name: "Le ministère", href: "/ministrie" },
+    { name: "Le ministère", href: "/ministere" },
     { name: "Ressources", href: "/ressources" },
     { name: "Agenda", href: "/agenda" },
     { name: "Nous contacter", href: "/contact" },
@@ -98,7 +98,7 @@ export default function NavBar() {
                   style={{ borderRadius: "50%" }}
                   className="h-8 w-auto"
                   src="/logo.jpg"
-                  alt=""
+                  alt="lOGO LA GRACE PARLE"
                 />
               </Link>
               <button
